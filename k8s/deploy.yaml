@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: angular-hello
-  name: angular-hello
+    app: test-ng
+  name: test-ng
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: angular-hello
+      app: test-ng
   template:
     metadata:
       labels:
-        app: angular-hello
+        app: test-ng
     spec:
       containers:
-        - image: image-registry.openshift-image-registry.svc:5000/ms-pipelines/angular-hello
+        - image: image-registry.openshift-image-registry.svc:5000/ms-pipelines/test-ng
           imagePullPolicy: Always
-          name: angular-hello
+          name: test-ng
           ports:
             - containerPort: 8080
               protocol: TCP
