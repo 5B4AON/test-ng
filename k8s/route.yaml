@@ -7,7 +7,7 @@ metadata:
   name: test-ng
   namespace: ms-pipelines
 spec:
-  host: angular-hello-ms-pipelines.apps.unilong.azureuni.tses.gr
+  host: test-ng-ms-pipelines.apps.unilong.azureuni.tses.gr
   port:
     targetPort: 8080
   to:
